@@ -9,8 +9,7 @@ import javax.persistence.Converter;
 public class YearConverter implements AttributeConverter<Year, Integer> {
 
     @Override
-    public Integer convertToDatabaseColumn(Year year) {
-        return year != null ? year.getValue() : null;
+    public Integer convertToDatabaseColumn(Year year) { return year != null ? year.getValue() : null;
     }
 
     @Override
